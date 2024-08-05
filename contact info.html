@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff9d4;
+        }
+
+        .container {
+            display: flex;
+            background-color: #f8f8f8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            background-color: #004f44;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .contact-info h2 {
+            margin: 0 0 20px 0;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info .social-icons a {
+            margin: 0 5px;
+        }
+
+        .contact-form {
+            padding: 20px;
+        }
+
+        .contact-form h2 {
+            margin: 0 0 20px 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #004f44;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #003831;
+        }
+
+        .contact-form {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>#298 TDI City, Sector 110, Mohali,<br>Punjab, India-140307</p>
+        <p>Email: <a href="mailto:contact@solutionworld247.com">contact@solutionworld247.com</a></p>
+        <p>Phone: +91 9305419894</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>Send a Message</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="mobile" placeholder="Mobile No." required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Write Your message here..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
